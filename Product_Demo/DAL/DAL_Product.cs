@@ -1,6 +1,6 @@
 ﻿using Product_Demo.Models;
 using System.Data.SqlClient;
-
+using Microsoft.Data.SqlClient;
 namespace Product_Demo.DAL
 {
     public class DAL_Product : DAL_Connection

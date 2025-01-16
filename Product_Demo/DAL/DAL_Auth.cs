@@ -1,5 +1,6 @@
 ﻿using Product_Demo.Models;
 using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
 namespace Product_Demo.DAL
 {
@@ -16,7 +17,7 @@ namespace Product_Demo.DAL
 
         public Auth_Model Auth_Login(Auth_Model auth)
         {
-            SqlConnection sqlConnection = new SqlConnection(GetDatabaseConnection(_Config));
+            SqlConnection sqlConnection = new Microsoft.Data.SqlClient.SqlConnection(GetDatabaseConnection(_Config));
 
             sqlConnection.Open();
 
